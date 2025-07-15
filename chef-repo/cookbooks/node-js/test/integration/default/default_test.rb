@@ -1,4 +1,4 @@
-# Chef InSpec test for recipe nodejs::default
+# Chef InSpec test for recipe node-js::default
 
 # The Chef InSpec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec/resources/

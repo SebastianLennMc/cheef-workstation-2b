@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   # Use this in case we need to forward a port for a database
   # config.vm.network "forwarded_port", guest: 80, host: 8080
@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "chef-repo/cookbooks"
-    chef.add_recipe "nodejs"
+    chef.add_recipe "node-js"
     chef.arguments = "--chef-license accept"
     chef.install = false
   end
