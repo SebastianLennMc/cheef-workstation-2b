@@ -1,0 +1,14 @@
+# Vagrant
+.vagrant/
+
+# Logs
+*.log
+
+## Ignore Chef related files and secrets
+./chef-repo/.chef
+./chef-repo/.chef/*.pem
+./chef-repo/.chef/encrypted_data_bag_secret
+
+## Ignore Chef-Zero files
+./chef-repo/clients
+./chef-repo/nodes
