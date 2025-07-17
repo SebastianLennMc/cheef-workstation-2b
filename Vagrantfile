@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "chef-repo/cookbooks"
     chef.add_recipe "node-js"
+	chef.add_recipe "mysql"
     chef.arguments = "--chef-license accept"
     chef.install = false
   end
